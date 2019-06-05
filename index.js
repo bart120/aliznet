@@ -35,7 +35,13 @@ let calculateAmortization = (principal, years, rate) => {
     return { monthlyPayment, monthlyRate, amortization };
 };
 
-let obj = calculateAmortization(200000, 25, 2);
-console.log(obj);
-document.getElementById("monthlyPayment").innerHTML = obj.monthlyPayment.toFixed(2);
-document.getElementById("monthlyRate").innerHTML = (obj.monthlyRate * 100).toFixed(2);
+document.getElementById("btnCal").addEventListener('click', () => {
+    let obj = calculateAmortization(200000, 25, 2);
+    // console.log(obj);
+    document.getElementById("monthlyPayment").innerHTML = obj.monthlyPayment.toFixed(2);
+    document.getElementById("monthlyRate").innerHTML = (obj.monthlyRate * 100).toFixed(2);
+    obj.amortization.forEach(x => {
+        console.log(x);
+    });
+});
+
