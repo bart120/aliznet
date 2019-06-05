@@ -1,8 +1,37 @@
+<!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
+    <header>
+        <h1>Calculateur</h1>
+    </header>
+
+    <div class="content">
+        <div class="form">
+            <div>
+                <label>Montant</label>
+                <input type="text" id="principal" value="200000">
+            </div>
+            <div>
+                <label>Années</label>
+                <input type="number" id="years" value="25">
+            </div>
+            <div>
+                <label>Taux</label>
+                <input type="text" id="rate" value="2.0">
+            </div>
+            <div>
+                <button id="btnCal">Calculer</button>
+            </div>
+        </div>
+        <h2>Montant par mois: <span id="monthlyPaiement" class="currency"></span></h2>
+    </div>
 
     <script src="index.js"></script>
 </body>
