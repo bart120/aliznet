@@ -1,0 +1,17 @@
+[
+    {
+        "name": "30 ans (fixe)",
+        "rate": "13",
+        "years": "30"
+    },
+    {
+        "name": "20 ans (fixe)",
+        "rate": "2.8",
+        "years": "20"
+    },
+    {
+        "name": "15 ans (fixe)",
+        "rate": "2.5",
+        "years": "15"
+    }
+]
