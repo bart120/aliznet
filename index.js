@@ -36,3 +36,46 @@ document.getElementById("btnCal").addEventListener('click', () => {
     document.getElementById('amortization').innerHTML = html;
 });
 
+// const url = 'rates.json';
+/*
+function executePromise(resolve, reject) {
+    setTimeout(() => {
+        console.log('call resolve');
+        resolve();
+    }, 5000);
+}
+
+function afficheMessage() {
+    console.info("la promesse a fini l'execution")
+}
+
+const prom = new Promise(executePromise);
+console.log('début du programme');
+console.log('appel function executePromise');
+// executePromise();
+
+prom.then(afficheMessage);
+console.log('fin du programme');
+*/
+/*
+console.log('début du programme');
+const prom = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('call resolve');
+        resolve();
+    }, 5000);
+});
+
+console.log('appel function executePromise');
+// executePromise();
+
+prom.then(() => console.info("la promesse a fini l'execution"));
+console.log('fin du programme');*/
+
+
+
+
+//let prom = new Promise(())
+
+
+
