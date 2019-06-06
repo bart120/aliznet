@@ -10,7 +10,7 @@ export class Mortgage {
     calculateMonthlyPayment() {
         let monthlyRate = 0;
         if (this.rate) {
-            monthlyRate = rate / 100 / 12;
+            monthlyRate = this.rate / 100 / 12;
         }
         let monthlyPayment = this.principal * monthlyRate / (1 - (Math.pow(1 / (1 + monthlyRate), this.years * 12)));
 
