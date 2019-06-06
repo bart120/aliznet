@@ -36,7 +36,25 @@ document.getElementById("btnCal").addEventListener('click', () => {
     document.getElementById('amortization').innerHTML = html;
 });
 
-// const url = 'rates.json';
+const url = 'rates.json';
+/*fetch(url)
+    .then((resp) => {
+        resp.json().then(values => console.log(values)).catch(err => console.log(err)
+    }).catch(err => console.warn(err);
+*/
+fetch(url)
+    .then(resp => resp.json())
+    .then(values => {
+        console.log(values);
+        let html = '';
+        values.forEach(rate => html += `<tr><td>${rate.name}</td><td>${rate.years}</td><td>${rate.rate}%</td></tr>`);
+        document.getElementById("rates").innerHTML = html;
+    })
+    .catch(err => console.warn(err));
+
+
+
+
 /*
 function executePromise(resolve, reject) {
     setTimeout(() => {
@@ -62,20 +80,16 @@ console.log('début du programme');
 const prom = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log('call resolve');
-        resolve();
+        resolve(5);
     }, 5000);
 });
 
 console.log('appel function executePromise');
 // executePromise();
 
-prom.then(() => console.info("la promesse a fini l'execution"));
-console.log('fin du programme');*/
-
-
-
-
-//let prom = new Promise(())
+prom.then((time) => console.info(`la promesse a fini l'execution en ${time} secondes.`));
+console.log('fin du programme');
+*/
 
 
 
