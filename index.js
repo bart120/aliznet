@@ -36,13 +36,13 @@ document.getElementById("btnCal").addEventListener('click', () => {
     document.getElementById('amortization').innerHTML = html;
 });
 
-const url = 'rates.json';
+/*const url = 'rates.json';*/
 /*fetch(url)
     .then((resp) => {
         resp.json().then(values => console.log(values)).catch(err => console.log(err)
     }).catch(err => console.warn(err);
 */
-fetch(url)
+/*fetch(url)
     .then(resp => resp.json())
     .then(values => {
         console.log(values);
@@ -50,7 +50,7 @@ fetch(url)
         values.forEach(rate => html += `<tr><td>${rate.name}</td><td>${rate.years}</td><td>${rate.rate}%</td></tr>`);
         document.getElementById("rates").innerHTML = html;
     })
-    .catch(err => console.warn(err));
+    .catch(err => console.warn(err));*/
 
 
 

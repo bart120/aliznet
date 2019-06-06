@@ -2,10 +2,13 @@ var path = require("path");
 var webpack = require("webpack");
 
 module.exports = {
-    entry: './index.js',
+    entry: {
+        main: './index.js',
+        ratefinder: './ratefinder.js'
+    },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'main.bundle.js'
+        filename: '[name].bundle.js'
     },
     /*module: {
         rules: [

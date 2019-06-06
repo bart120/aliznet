@@ -5,5 +5,7 @@ export class Rate {
 
     getRates() {
 
+        return fetch(this.url).then(resp => resp.json());
+
     }
 }
