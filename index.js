@@ -32,8 +32,7 @@ document.getElementById("btnCal").addEventListener('click', () => {
                 <td class="currency left">${Math.round(x.interestY)}</td>
                 <td class="currency">${Math.round(x.balance)}</td>
             </tr>
-        `;
-        document.getElementById('amortization').innerHTML = html;
-    });
+        `});
+    document.getElementById('amortization').innerHTML = html;
 });
 
