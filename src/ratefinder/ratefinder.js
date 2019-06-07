@@ -1,6 +1,6 @@
-import { Rate } from './rate';
+import { Rate } from '../services/rate';
 
-const rate = new Rate('./rates.json');
+const rate = new Rate('./data/rates.json');
 console.log('call getrates')
 
 rate.getRates().then(data => {

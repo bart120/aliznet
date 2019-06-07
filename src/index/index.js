@@ -1,6 +1,6 @@
 "use strict"
 // let mortgage = require('./mortgage');(2)
-import { Mortgage } from './mortgage'; //(1)
+import { Mortgage } from '../services/mortgage'; //(1)
 
 document.getElementById("btnCal").addEventListener('click', () => {
     let principal = document.getElementById("principal").value;

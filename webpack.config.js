@@ -3,8 +3,8 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        main: './index.js',
-        ratefinder: './ratefinder.js'
+        main: './src/index/index.js',
+        ratefinder: './src/ratefinder/ratefinder.js'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
