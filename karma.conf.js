@@ -67,18 +67,6 @@ module.exports = function (config) {
     // how many browser should be started simultaneous
     concurrency: Infinity,
     webpack: {
-      /*module: {
-        rules: [
-          {
-            test: /\.js$/i,
-            exclude: /(node_modules)/,
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        ]
-      }*/
       stats: {
         colors: true
       }
