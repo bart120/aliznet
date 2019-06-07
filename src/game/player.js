@@ -21,7 +21,38 @@ export class Player {
     }
 
     keydown(ev) {
-        console.log(ev);
+        const arrow = ARROW_MAP[ev.keyCode];
+        if (arrow === 'left') {
+            this.x -= this.speed;
+        }
+        if (arrow === 'right') {
+            this.x += this.speed;
+        }
+        if (arrow === 'up') {
+            this.y += this.speed;
+        }
+        if (arrow === 'down') {
+            this.y -= this.speed;
+        }
         console.log(this);
+
+        /*1 =='1' => VRAI
+        1 === '1' => FAUX*/
+    }
+
+    draw() {
+        this.ctx.beginPath();
+        this.ctx.rect(this.x, this.y, this.width, this.height);
+        this.ctx.fillStyle = 'yellow';
+        this.ctx.fill();
+    }
+
+    getBorders() {
+        return {
+            xMin: this.x,
+            xMax: this.x + this.width,
+            yMin: this.y,
+            yMax: this.y + this.height
+        };
     }
 };
